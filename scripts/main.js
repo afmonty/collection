@@ -11,19 +11,26 @@ console.log("The average price is $" + avg.toFixed(2)); //prints average to the 
 
 
 //Prices between 14 and 18//
-
-
-var chkPrice = function(){
-	for (var i = 0; i < array.length; i++);
-		if ((items[i].price > 14)&(items[i].price < 18)){
-
-
+var price = 0; //sets the initial value of price to a number
+		
+for(var i = 0; i < items.length; i++){  // creates loop through the array for the length of the array
+		var price = (items[i].price); //get the price of each item and adds them together
+	  	if((price < 14.00)||(price > 18.00)){
+	  		console.log("it works");//console.log(sum); //prints sum to the console for checking.
 		}
-	}
+		else {
+			console.log("The price is $" + price);
+  	}
 }
 
-//Find GBP code; print name and price//
+//var iList = price; //takes total of all items and divides by number of items to get average.
 
+
+
+
+
+//Find GBP code; print name and price//
+	
 
 //Find items made of wood//
 
